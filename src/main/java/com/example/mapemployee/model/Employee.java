@@ -59,7 +59,7 @@ public class Employee {
         return Objects.hash(firstName, lastName);
     }
 
-    public String getFirstName() {
+     public String getFirstName() {
         return firstName;
     }
 

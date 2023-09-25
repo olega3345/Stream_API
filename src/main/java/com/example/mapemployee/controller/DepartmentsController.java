@@ -19,7 +19,6 @@ public class DepartmentsController {
     public DepartmentsController(DepartmentService departmentService) {
         this.departmentService = departmentService;
     }
-
     @GetMapping("/min-salary")
     public double getMin(@RequestParam("departmentId") int department) {
         return departmentService.getEmployeeWithMinSalary(department);

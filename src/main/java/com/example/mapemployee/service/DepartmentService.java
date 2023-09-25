@@ -29,7 +29,7 @@ public class DepartmentService {
                 .max()
                 .orElseThrow(EmployeeNotFoundException::new);
     }
-    public double getEmployeeWithMinSalary(int department) {
+     public double getEmployeeWithMinSalary(int department) {
         return employeeService.getAll().stream()
                 .filter(employee -> employee.getDepartment() == department)
                 .mapToDouble(Employee::getSalary)

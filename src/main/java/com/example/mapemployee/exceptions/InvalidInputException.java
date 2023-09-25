@@ -20,7 +20,7 @@ public class InvalidInputException extends RuntimeException{
         super(cause);
     }
 
-    public InvalidInputException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
-        super(message, cause, enableSuppression, writableStackTrace);
+     public InvalidInputException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+         super(message, cause, enableSuppression, writableStackTrace);
     }
 }
