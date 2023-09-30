@@ -18,13 +18,13 @@ public class EmployeeController {
         this.employeeService = employeeService;
     }
     @GetMapping("/all")
-    public Collection<Employee> all() {
+     public Collection<Employee> all() {
         return employeeService.getAll();
     }
 
     @GetMapping("/add")
     public Employee add(String firstName, String lastName, Integer department, double salary) {
-        return employeeService.add(new Employee(firstName, lastName, department, salary));
+        return employeeService.add(firstName, lastName, department, salary);
     }
     @GetMapping("/remove")
     public Employee remove(String firstName, String lastName) {
